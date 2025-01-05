@@ -6,6 +6,25 @@ Combining the compilation and execution steps into a single command can save you
 
 > Note: This script is intended for use with Git Bash on Windows, but it should work on other Unix-like systems as well.
 
+## Usage
+The basic syntax for using RunJava is:
+```bash
+runjava [class_name] [args...]
+```
+
+### Example
+For example, if you have a Java file named `HelloWorld.java` with a `main` method that takes a single argument, you can run it using the following command:
+
+before:
+```bash
+$ javac helloWorld.java
+$ java HelloWorld arg1
+```
+After:
+```bash
+$ runjava HelloWorld arg1
+```
+
 ## Installation Steps:
 RunJava is a shell script and does not require any installation process. You can save the script below as `runjava.sh` and make it executable using the following command:
 
@@ -41,21 +60,3 @@ For my case, full path is : `C:\Program Files\Git\usr\bin`
 
 
 
-## Usage
-The basic syntax for using RunJava is:
-```bash
-runjava [class_name] [args...]
-```
-
-### Example
-For example, if you have a Java file named `HelloWorld.java` with a `main` method that takes a single argument, you can run it using the following command:
-
-before:
-```bash
-$ javac helloWorld.java
-$ java HelloWorld arg1
-```
-After:
-```bash
-$ runjava HelloWorld arg1
-```
